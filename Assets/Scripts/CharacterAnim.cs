@@ -106,7 +106,7 @@ public class CharacterAnim : MonoBehaviour
         {
             while (anim.GetLayerWeight(1) < 1)
             {
-                time += Time.deltaTime;
+                time += Time.deltaTime * 1.5f; ;
                 if (time > 1)
                 {
                     time = 1;
@@ -119,7 +119,7 @@ public class CharacterAnim : MonoBehaviour
         {
             while (anim.GetLayerWeight(1) > 0)
             {
-                time += Time.deltaTime;
+                time += Time.deltaTime * 1.5f;
                 if (time > 1)
                 {
                     time = 1;
